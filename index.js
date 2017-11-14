@@ -235,7 +235,7 @@ export default class MVideo extends Vue {
 
   render() {
     return (
-      <div class="video-wrapper" onTouchstart={this.onWrapperClick /* 使用onclic 会导致全屏结束之后长按才能触发，原因未知 */}>
+      <div class="video-wrapper" onTouchstart={this.onWrapperClick /* 使用onclick 会导致全屏结束之后长按才能触发，原因未知 */}>
         <div class={`video-controls ${!this.showControls ? 'hidden' : ''}`} >
           <img class="video-pause-control" src={pause} onTouchstart={this.pause}/>
           <div class="video-status">
